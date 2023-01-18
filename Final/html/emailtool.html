@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+      
+        <title>JavaScript form validation - checking email</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../css/form-style.css" type="text/css" />
+        <script src="https:ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+            <style>.Mydiv{
+            color:#fff;
+            background:#ff9c46;
+            padding:10px;
+            }
+            </style>
+            <link href="../css/menu1.css" rel="stylesheet" type="text/css">
+<script>
+			$(document).ready(function(){
+            	$("#Div2").hover(function(){
+            		$(this).toggleClass("Mydiv");
+            	});
+            });
+        </script>
+		<script type="text/javascript">
+            function linkModifier() {
+            for (var i = 0; i < document.links.length; i++) {
+            document.links[i].href = "https://wsutech.edu/wp-content/uploads/academic_calendar/Academic-Calendar-2022-2023.pdf";
+            }
+            }
+        </script>
+    </head>
+	<div class="mail">
+      <i class="fas fa-close fa-3x" onclick="self.close()" style="right: 30px; top: 20px; position: absolute"></i>
+      </div>
+        <body onload="linkModifier()">
+          
+                  <div class="mail">
+                  <h2>RegEx Project W/ JQuery</h2>
+                  <h3>Input an email and Submit</h3>
+                  <form name="form1" action="#"> 
+                      <ul>
+                        <li>
+                        <input type='text' name='text2' placeholder="enter your name please" required autofocus/></li>
+                        <li>&nbsp;</li>
+						  
+                        <li>
+                        <input type='text' name='text1' placeholder="enter your email please"/></li>
+                        <li>&nbsp;</li>
+						  
+						<input type="image" name="imgbtn" 
+                        src="https://i.imgur.com/BomRoKw.png" height="150" alt="Submit" formaction="https://wsutech.edu/wp-content/uploads/academic_calendar/Academic-Calendar-2022-2023.pdf" onclick="ValidateEmail(document.form1.text1)" formtarget="_blank">
+                        <li>
+                          <h5>Click The Wizard To Submit!</h5>
+                        </li>
+                      </ul>
+                  </form>
+                  </div>
+                  <script src="../js/email-validation.js"></script>
+				<table width="100%" border="1" cellspacing="1" cellpadding="2">
+					<div id="Div2">
+                      <tbody>
+                        <tr>
+                        <th scope="col">
+                          <h2>URL Changer</h2><ul>
+                          <li><a href="http://google.com/">click - WSU Schedule</a></li>
+                          <li><a href="http://www.nytimes.com/">Still the Schedule</a></li>
+                          </ul>
+                        </th>
+                        </tr>
+                      </tbody>
+                    </div>
+					<div id="Div3">
+					<tbody>
+                        <tr>
+                        <th scope="col">
+                          <h2>My Bird Friend</h2>
+					  <img src="https://i.imgur.com/BFCNdQX.png" width="400" height="auto" alt="myimage"/>
+                        </th>
+                        </tr>
+                      </tbody>
+					</div>
+					
+					<div id="Div4">
+					<tbody>
+                        <tr>
+                        <th scope="col">
+                          <h2>Moon Phase</h2>
+						  <img src="https://i.imgur.com/GH2HZc2.png" width="400" height="auto" alt="myimage"/> </th>
+                        </tr>
+                      </tbody>
+					</div>
+				</table>	
+        </body>
+</html>

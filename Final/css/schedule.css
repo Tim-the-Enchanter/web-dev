@@ -1,0 +1,15 @@
+body
+          
+{
+min-width:800px;
+width: auto !important;
+width:800px;
+background-image: url('https://w.wallhaven.cc/full/p2/wallhaven-p2zv69.png');
+color: #352D08;
+
+}
+.content {
+max-width: 500px;
+margin: auto;
+}
+

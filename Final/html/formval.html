@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+          <title>Registration Form</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link href="../css/utilities.css" rel="stylesheet" type="text/css">
+		    <link href="../css/style.css" rel="stylesheet" type="text/css">
+		    <link href="../css/menu1.css" rel="stylesheet" type="text/css">
+		    <link href="../css/schedule.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class id="">
+		<nav id="navigationBar">
+          <ul>
+            <li> <a href="../index.html">Home</a> </li>
+            <li><a>Projects</a>
+              <ul>
+                <li><a href="../html/formval.html">Form Validator</a></li>
+                <li><a href="../html/type_test.html">Typing Test</a></li>
+                <li><a href="../html/riproject.html">Responsive Images</a></li>
+                <li><a href="../html/emailtool.html">Email Tool</a></li>
+				<li><a href="java_resources.html" target="_blank">Java Links!</a></li>
+              </ul>
+            </li>
+            <li><a href="../html/aboutme.html">About</a>
+              <ul>
+                <li><a href="../html/class_schedule.html">Class Schedule</a></li>
+                <li><a href="https://github.com/Tim-the-Enchanter">My Github</a></li>
+              </ul>
+            </li>
+            <li><a href="/index.html">Contact</a></li>
+          </ul>
+        </nav>
+          
+        <div class="container">
+            <div class="regcard">
+				<h1>Registration Form</h1>
+              <form action="/register" method="post" enctype="multipart/form-data" class="form-control"
+              id="registrationForm">
+              <div class="required">
+              <label class="field" for="name">Name</label>
+              <input name="name" type="text" placeholder="Enter Your Name"/>
+              </div>
+              <div class="required">
+				  <br>
+              <label class="field">Gender</label>
+              <label><input type="radio" name="gender" value="male" /> male</label>
+              <label><input type="radio" name="gender" value="female" /> female</label>
+              </div>
+			    <br>
+              <div class="required">
+              <label class="field">Operating System</label>
+              <select name="os">
+              <option value="windows">Windows</option>
+              <option value="macos">Mac OS</option>
+              <option value="linux">Linux</option>
+              <option value="other">Other ...</option>
+              </select>
+              </div>
+				  <br>
+              <div>
+              <label class="field">Toys</label>
+				  <br>
+              <label><input type="checkbox" name="toy" value="digicam" /> Digital Camera
+              </label>
+              <label><input type="checkbox" name="toy" value="mp3" /> MP3 Player</label>
+              <label><input type="checkbox" name="toy" value="wlan" /> Wireless LAN</label>
+              </div>
+				  <br>
+              <div class="btn flex">
+              <label class="btn">Upload Your Portrait&nbsp; &gt;&gt;&gt;</label>
+              <input name="portrait" type="file" class=" btn"/>
+              </div>
+				  <br>
+              <div>
+              <textarea name="bio" cols="40" rows="6" placeholder="Mini Biography"></textarea>
+              </div>
+              <div class="submit">
+              <input type="submit" class="btn" value="register" />
+              </div>
+              </form>
+          </div>
+			</div>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="../js/form.js"></script>
+        </body>
+    </html>
